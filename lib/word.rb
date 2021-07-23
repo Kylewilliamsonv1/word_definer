@@ -15,5 +15,17 @@ class Word
     @@words.values
   end
 
-  
+  def save
+    @@words[self.id] = Word.new({:name => self.name, :id => self.id, :type => self.type})
+  end
 end
+
+
+
+
+
+
+# def self.clear
+#   @@words = {}
+#   @@total_rows = 0
+# end

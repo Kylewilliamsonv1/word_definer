@@ -14,13 +14,20 @@ describe '#board' do
   describe('#save') do
     it("it will save a word") do
       word = Word.new({:name => "nugget", :id => nil, :type => "noun"})
-      word.save()
+      word.save
       expect(Word.all).to(eq([word]))
     end
   end
 
-
-
+  describe('#==') do
+    it('it will compare words by their attributes, if they match they are the same.') do
+      word = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word.save
+      word2 = Word.new({:name => "happy", :id => nil, :type => "adjective"})
+      word2.save
+      expect(Word.all).to(eq([word2]))
+    end
+  end
 end
 
 
@@ -30,5 +37,3 @@ end
   # end
 
 
-    # describe('#==') do
-  #   it('it will compare words by their attributes, if they match they are the same.') do
