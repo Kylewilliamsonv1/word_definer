@@ -42,3 +42,18 @@ patch('/words/:id') do
   erb(:words)
 end
 
+get('/words/definitions/new') do
+  erb(:new_definition)
+end
+
+get('/words/:id/definitions/:definition_id') do
+  @definition = Definition.find(params[:definition_id].to_i())
+  erb(:definition)
+end
+
+post('/words/:id/definitions') do
+  @word = Word.find(params[:id].to_i())
+  definition = Definition.new(params[:definition_description], @board.id, nil)
+  definition.save()
+  erb(:word)
+end
