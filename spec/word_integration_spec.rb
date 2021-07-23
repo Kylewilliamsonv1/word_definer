@@ -25,8 +25,8 @@ end
 describe('locate new word', {:type => :feature}) do
   it('take user to word list page.') do
     visit('/')
-    click_on('Nugget')
-    expect(page).to have_content('Nugget')
+    click_on('nugget')
+    expect(page).to have_content('nugget')
   end
 end
 

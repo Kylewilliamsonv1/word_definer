@@ -2,14 +2,10 @@
 
 <h3>Word Definitions</h3>
 
-  <% if @word.definitions %>
-    <ul>
-      <% @word.definitions.each do |song| %>
-        <li><a href="/words/<%= @word.id %>/definitions/<%= definition.id %>"><%= definition.description %></a></li>
-      <% end %>
-    </ul>
-  <% else %>
-    <p>There are no definitions listed for this word yet.</p>
-  <% end %>
+<h4><a href="/words/definitions/new">Enter a new definition</a></h4>
+
+
+<p><a href="/words/<%= @word.id %>/edit">Edit word</a></p>
+<p><a href="/words">Return to board list</a></p>
 
 
