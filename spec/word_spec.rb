@@ -43,6 +43,16 @@ describe '#word' do
       expect(Word.all).to(eq([]))
     end
   end
+
+  describe('.find') do
+    it("it will find a word by its id.") do
+      word = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word.save
+      word2 = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word2.save
+      expect(Word.find(word2.id)).to(eq(board2))
+    end
+  end
 end
 
 

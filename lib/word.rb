@@ -27,6 +27,8 @@ class Word
     @@words = {}
     @@total_rows = 0
   end
+
+  
 end
 
 
