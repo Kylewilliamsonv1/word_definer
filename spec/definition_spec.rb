@@ -23,15 +23,15 @@ describe '#definition' do
     end
   end
 
-  # describe('#==') do
-  # it('it will compare words by their attributes, if they match they are the same.') do
-  #     definition = Definition.new({:description => "buildable kids couch", :id => nil})
-  #     definition.save
-  #     definition2 = Definition.new({:description => "buildable kids couch", :id => nil})
-  #     definition2.save
-  #     expect([definition]).to(eq([definition2]))
-  #   end
-  # end
+  describe('#==') do
+  it('it will compare words by their attributes, if they match they are the same.') do
+      definition = Definition.new({:description => "buildable kids couch", :id => nil})
+      definition.save
+      definition2 = Definition.new({:description => "buildable kids couch", :id => nil})
+      definition2.save
+      expect([definition]).to(eq([definition2]))
+    end
+  end
 
   # describe('.clear') do
   #   it('clears all words') do
