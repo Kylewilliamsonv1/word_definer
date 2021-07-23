@@ -5,7 +5,7 @@ require('./app')
 Capybara.app = Sinatra::Application
 set(:show_exceptions, false)
 
-describe('create a path to words page', {:type => :feature}) do
+describe('create a home path to words page', {:type => :feature}) do
   it('goes to home page') do
     visit('/')
     expect(page).to have_content('Discover words')
@@ -19,6 +19,14 @@ describe('create a new word', {:type => :feature}) do
     fill_in('name', :with => 'nugget')
     click_on('Create Word')
     expect(page).to have_content('nugget')
+  end
+end
+
+describe('locate new word', {:type => :feature}) do
+  it('take user to word list page.') do
+    visit('/')
+    click_on('Nugget')
+    expect(page).to have_content('Nugget')
   end
 end
 
