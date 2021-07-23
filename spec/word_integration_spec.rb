@@ -32,9 +32,11 @@ end
 
 describe('edit word', {:type => :feature}) do
   it('take user to edit page') do
-    visit('/words/edit')
+    visit('/words')
+    click_on('nugget')
+    click_on('Edit word')
     fill_in('name', :with => 'happy')
-    click_on('Edit Word')
+    click_on('Update')
     expect(page).to have_content('happy')
   end
 end
