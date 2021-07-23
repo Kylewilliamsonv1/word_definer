@@ -53,6 +53,15 @@ describe '#word' do
       expect(Word.find(word2.id)).to(eq(word2))
     end
   end
+
+  describe('#update') do
+    it('it will update a board') do
+      word = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word.save
+      word.update({:name => "happy"})
+      expect(word.name).to(eq({:name=>"happy"}))
+    end
+  end
 end
 
 
