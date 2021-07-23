@@ -11,3 +11,16 @@ describe('create a path to words page', {:type => :feature}) do
     expect(page).to have_content('Discover words')
   end
 end
+
+describe('create a new word', {:type => :feature}) do
+  it('creates a new word and then goes to the new board page') do
+    visit('/')
+    click_on('Add a New Word')
+    fill_in('name', :with => 'nugget')
+    click_on('Create Word')
+    expect(page).to have_content('nugget')
+  end
+end
+
+
+
