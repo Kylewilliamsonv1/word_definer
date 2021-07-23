@@ -31,6 +31,10 @@ class Word
   def self.find(id)
     @@words[id]
   end
+
+  def update(name)
+    @name = name
+  end
 end
 
 
