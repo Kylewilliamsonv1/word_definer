@@ -3,7 +3,22 @@
     "coverage": {
       "/Users/kylewilliamson/Desktop/word_definer/lib/definition.rb": {
         "lines": [
-
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
         ]
       },
       "/Users/kylewilliamson/Desktop/word_definer/spec/word_spec.rb": {
@@ -144,6 +159,6 @@
         ]
       }
     },
-    "timestamp": 1627061135
+    "timestamp": 1627061684
   }
 }
