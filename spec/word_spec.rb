@@ -50,7 +50,7 @@ describe '#word' do
       word.save
       word2 = Word.new({:name => "nugget", :id => nil, :type => "noun"})
       word2.save
-      expect(Word.find(word2.id)).to(eq(board2))
+      expect(Word.find(word2.id)).to(eq(word2))
     end
   end
 end
