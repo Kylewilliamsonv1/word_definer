@@ -34,6 +34,88 @@
           null
         ]
       },
+      "/Users/kylewilliamson/Desktop/word_definer/spec/word_integration_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/kylewilliamson/Desktop/word_definer/app.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kylewilliamson/Desktop/word_definer/lib/word.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          16,
+          16,
+          16,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          8,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          7,
+          7,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/kylewilliamson/Desktop/word_definer/spec/word_spec.rb": {
         "lines": [
           1,
@@ -120,58 +202,8 @@
           null,
           null
         ]
-      },
-      "/Users/kylewilliamson/Desktop/word_definer/lib/word.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          16,
-          16,
-          16,
-          null,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          8,
-          null,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          7,
-          7,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1627063356
+    "timestamp": 1627065897
   }
 }

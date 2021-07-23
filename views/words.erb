@@ -1,0 +1,15 @@
+<h1>Discover words and their definitions!</h1>
+<h2>Check out our list of words:</h2>
+
+<% if @words.any? %>
+  <ul>
+    <% @words.each do |word| %>
+    <li><a href="/words/<%= word.id %>"><%= word.name %></a></li>
+  <% end %>
+  </ul>
+
+  <% else %>
+    <p>There are no words to display. Do you want to make a new one?</p>
+  <% end %>
+<br>
+  <h4><a href="/words/new">Add a New Word</a></h4>
