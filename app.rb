@@ -9,3 +9,4 @@ get('/') do
   @words = Word.all
   erb(:words)
 end
+

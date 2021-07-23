@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-23T11:44:57-07:00">2021-07-23T11:44:57-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-23T12:02:59-07:00">2021-07-23T12:02:59-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.08
+         2.06
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>98</b> relevant lines,
-    <span class="green"><b>98</b> lines covered</span> and
+    <b>101</b> relevant lines,
+    <span class="green"><b>101</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -73,9 +73,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#d9586e398b9947c1d69bd2b15ca5a646791a5b21" class="src_link" title="app.rb">app.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -99,7 +99,7 @@
             <td class="cell--number">22</td>
             <td class="cell--number">22</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.09</td>
+            <td class="cell--number">4.14</td>
             
           </tr>
         
@@ -156,8 +156,8 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>9</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -246,35 +246,35 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"># get(&#39;/&#39;) do </code>
+            
+
+            <code class="ruby">get(&#39;/&#39;) do </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   @words = Word.all</code>
+            
+
+            <code class="ruby">  @words = Word.all</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   erb(:words)</code>
+            
+
+            <code class="ruby">  erb(:words)</code>
           </li>
         </div>
       
@@ -285,7 +285,18 @@
 
             
 
-            <code class="ruby"># end</code>
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -825,8 +836,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="15">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="4" data-linenumber="15">
+            <span class="hits">4</span>
             
 
             
@@ -1291,7 +1302,7 @@
 
             
 
-            <code class="ruby">describe(&#39;create a path&#39;, {:type =&gt; :feature}) do</code>
+            <code class="ruby">describe(&#39;create a path to words page&#39;, {:type =&gt; :feature}) do</code>
           </li>
         </div>
       
@@ -1324,7 +1335,7 @@
 
             
 
-            <code class="ruby">    expect(page).to_have_content(&#39;test&#39;)</code>
+            <code class="ruby">    expect(page).to have_content(&#39;Discover words&#39;)</code>
           </li>
         </div>
       

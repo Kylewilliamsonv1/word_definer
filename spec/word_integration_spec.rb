@@ -5,9 +5,9 @@ require('./app')
 Capybara.app = Sinatra::Application
 set(:show_exceptions, false)
 
-describe('create a path', {:type => :feature}) do
+describe('create a path to words page', {:type => :feature}) do
   it('goes to home page') do
     visit('/')
-    expect(page).to_have_content('test')
+    expect(page).to have_content('Discover words')
   end
 end
