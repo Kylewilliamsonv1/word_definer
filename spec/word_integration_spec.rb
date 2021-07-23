@@ -30,5 +30,12 @@ describe('locate new word', {:type => :feature}) do
   end
 end
 
-
+describe('edit word', {:type => :feature}) do
+  it('take user to edit page') do
+    visit('/words/edit')
+    fill_in('name', :with => 'happy')
+    click_on('Edit Word')
+    expect(page).to have_content('happy')
+  end
+end
 
