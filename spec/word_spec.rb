@@ -3,7 +3,7 @@ SimpleCov.start
 require 'rspec'
 require 'word'
 
-describe '#board' do 
+describe '#word' do 
 
   before(:each) do
     Word.clear()
@@ -29,7 +29,7 @@ describe '#board' do
       word.save
       word2 = Word.new({:name => "nugget", :id => nil, :type => "noun"})
       word2.save
-      expect(word).to(eq([word2]))
+      expect([word]).to(eq([word2]))
     end
   end
 
@@ -44,6 +44,18 @@ describe '#board' do
     end
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
