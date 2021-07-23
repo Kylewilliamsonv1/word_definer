@@ -18,3 +18,10 @@ end
 get('/words/new') do
   erb(:new_word)
 end
+
+post('/words') do
+  word = params[:name]
+  word = Word.new({:name => name, :id => nil, :type => type})
+  word.save
+  redirect to('/words') 
+end

@@ -17,7 +17,7 @@ describe '#word' do
 
   describe('#save') do
     it("it will save a word") do
-      word = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word = Word.new({:name => "nugget", :id => nil})
       word.save
       expect(Word.all).to(eq([word]))
     end
@@ -25,9 +25,9 @@ describe '#word' do
 
   describe('#==') do
     it('it will compare words by their attributes, if they match they are the same.') do
-      word = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word = Word.new({:name => "nugget", :id => nil})
       word.save
-      word2 = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word2 = Word.new({:name => "nugget", :id => nil})
       word2.save
       expect([word]).to(eq([word2]))
     end
@@ -35,9 +35,9 @@ describe '#word' do
 
   describe('.clear') do
     it('clears all words') do
-      word = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word = Word.new({:name => "nugget", :id => nil})
       word.save
-      word2 = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word2 = Word.new({:name => "nugget", :id => nil})
       word2.save
       Word.clear
       expect(Word.all).to(eq([]))
@@ -46,9 +46,9 @@ describe '#word' do
 
   describe('.find') do
     it("it will find a word by its id.") do
-      word = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word = Word.new({:name => "nugget", :id => nil})
       word.save
-      word2 = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word2 = Word.new({:name => "nugget", :id => nil})
       word2.save
       expect(Word.find(word2.id)).to(eq(word2))
     end
@@ -56,7 +56,7 @@ describe '#word' do
 
   describe('#update') do
     it('it will update a board') do
-      word = Word.new({:name => "nugget", :id => nil, :type => "noun"})
+      word = Word.new({:name => "nugget", :id => nil})
       word.save
       word.update({:name => "happy"})
       expect(word.name).to(eq({:name=>"happy"}))

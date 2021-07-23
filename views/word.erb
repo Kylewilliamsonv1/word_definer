@@ -2,14 +2,14 @@
 
 <h3>Word Definitions</h3>
 
-  # <% if @album.songs %>
-  #   <ul>
-  #     <% @album.songs.each do |song| %>
-  #       <li><a href="/albums/<%= @album.id %>/songs/<%= song.id %>"><%= song.name %></a></li>
-  #     <% end %>
-  #   </ul>
-  # <% else %>
-  #   <p>There are no songs listed for this album yet.</p>
-  # <% end %>
+  <% if @word.definitions %>
+    <ul>
+      <% @word.definitions.each do |song| %>
+        <li><a href="/words/<%= @word.id %>/definitions/<%= definition.id %>"><%= definition.description %></a></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>There are no definitions listed for this word yet.</p>
+  <% end %>
 
 
