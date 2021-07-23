@@ -14,16 +14,16 @@ class Definition
     @@definitions.values
   end
 
-  # def save
-  #   @@definitions[self.id] = Definition.new({:description => self.description, :id => self.id})
-  # end
+  def save
+    @@definitions[self.id] = Definition.new({:description => self.description, :id => self.id})
+  end
 
-  # def ==(definition_to_compare)
-  #   self.description == definition_to_compare.description
-  # end
+  def ==(definition_to_compare)
+    self.description == definition_to_compare.description
+  end
 
-  # def self.clear
-  #   @@definitions = {}
-  #   @@total_rows = 0
-  # end
+  def self.clear
+    @@definitions = {}
+    @@total_rows = 0
+  end
 end
