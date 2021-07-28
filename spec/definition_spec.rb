@@ -46,7 +46,7 @@ describe '#definition' do
 
   describe('#save') do
     it("saves a definition") do
-      definition = Definition.new("kids buildable couch", @word.id, nil)
+      definition = Definition.new({:description => "buildable kids couch", :id => nil})
       definition.save()
       expect(Definition.all).to(eq([definition]))
     end
@@ -54,9 +54,9 @@ describe '#definition' do
 
   describe('.find') do
     it("finds a definition by id") do
-      definition = Definition.new("kids buildable couch", @word.id, nil)
+      definition = Definition.new({:description => "buildable kids couch", :id => nil})
       definition.save()
-      definition2 = Definition.new("precious metal", @word.id, nil)
+      definition2 = Definition.new({:description => "precious metal", :id => nil})
       definition2.save()
       expect(Definition.find(definition.id)).to(eq(definition))
     end
@@ -64,7 +64,7 @@ describe '#definition' do
 
   describe('#update') do
     it("updates an song by id") do
-      definition = Definition.new("kids buildable couch", @word.id, nil)
+      definition = Definition.new({:description => "buildable kids couch", :id => nil})
       definition.save()
       definition.update("a valueable metal", @word.id)
       expect(definition.name).to(eq("a valueable metal"))
@@ -73,9 +73,9 @@ describe '#definition' do
 
   describe('#delete') do
     it("deletes an song by id") do
-      definition = Definition.new("kids buildable couch", @word.id, nil)
+      definition = Definition.new({:description => "buildable kids couch", :id => nil})
       definition.save()
-      definition2 = Definition.new("precious metal", @word.id, nil)
+      definition2 = Definition.new({:description => "precious metal", :id => nil})
       definition2.save()
       definition.delete()
       expect(Definition.all).to(eq([definition2]))
