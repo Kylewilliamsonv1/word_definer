@@ -43,6 +43,7 @@ patch('/words/:id') do
 end
 
 get('/words/definitions/new') do
+  
   erb(:new_definition)
 end
 
