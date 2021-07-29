@@ -59,3 +59,5 @@ post('/words/:id/definitions') do
   @words = Word.all
   erb(:word)
 end
+
+
