@@ -1,12 +1,58 @@
 class Definition
   attr_reader :id
-  attr_accessor :description
+  attr_accessor :description, :word_id
 
-  @@words = {}
+  
+  #   @@descriptions = {}
+  #   @@total_rows = 0
+  
+  #   def initialize(description, word_id, id)
+  #     @description = description
+  #     @word_id = word_id
+  #     @id = id || @@total_rows += 1
+  #   end
+  
+  #   def ==(definition_to_compare)
+  #     (self.description() == definition_to_compare.description()) && (self.word_id() == definition_to_compare.word_id())
+  #   end
+  
+  #   def self.all
+  #     @@definitions.values
+  #   end
+  
+  #   def save
+  #     @@definitions[self.id] = Definition.new(self.description, self.word_id, self.id)
+  #   end
+  
+  #   def self.find(id)
+  #     @@definitions[id]
+  #   end
+  
+  #   def update(description, word_id)
+  #     self.description = description
+  #     self.word_id = word_id
+  #     @@definitions[self.id] = Song.new(self.description, self.word_id, self.id)
+  #   end
+  
+  #   def delete
+  #     @@definitions.delete(self.id)
+  #   end
+  
+  #   def self.clear
+  #     @@definitions = {}
+  #   end
+  # end
+
+
+
+
+
+
+  @@definitions = {}
   @@total_rows = 0
 
   def initialize (attributes)
-    @name = attributes.fetch(:description)
+    @description = attributes.fetch(:description)
     @id = attributes.fetch(:id) || @@total_rows +=1
   end
 
@@ -31,10 +77,9 @@ class Definition
     @@definitions[id]
   end
 
-  def update(name, word_id)
-    self.name = name
-    self.word_id = word_id
-    @@definitions[self.id] = Definition.new(self.name, self.word_id, self.id)
+  def update(description)
+    self.description = description
+    @@definitions[self.id] = Definition.new({:description => self.description, :id => self.id})
   end
 
   def delete

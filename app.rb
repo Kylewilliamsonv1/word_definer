@@ -42,15 +42,15 @@ patch('/words/:id') do
   erb(:words)
 end
 
-get('/words/definitions/new') do
+get('/words/:id/definitions/new') do
 
   erb(:new_definition)
 end
 
-# get('/words/:id/definitions/:definition_id') do
-#   @definition = Definition.find(params[:definition_id].to_i())
-#   erb(:definition)
-# end
+get('/words/:id/definitions/:definition_id') do
+  @definition = Definition.find(params[:definition_id].to_i())
+  erb(:definition)
+end
 
 post('/words/:id/definitions') do
   @word = Word.find(params[:id].to_i())
